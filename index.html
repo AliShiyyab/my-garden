@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WireFrame</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            My Fabulous Garden
+        </h1>
+    </header>
+    <main>
+        <div class="Form">
+            <form class="form">
+                    <fieldset name="New Flower">
+                    <p style="font-weight: bold;">Name</p>
+                    <input type="text" id="nameInput">
+                    <br>
+                    <p style="font-weight: bold;">Image</p>
+                    <select id="imageItem">
+                        <option>Alstroemerias <img src="./img/Alstroemerias.jpeg"></option>
+                        <option>Gardenias <img src="./img/Gardenias.jpeg"></option>
+                        <option>Orchids<img src="./img/Orchids.jpeg"></option>
+                        <option>Peonies<img src="./img/Peonies.jpeg"></option>
+                        <option>Roses<img src="./img/Roses.jpeg"></option>
+                        <option>Sunflowers<img src="./img/Sunflowers.jpeg"></option>
+                        <option>Tulips<img src="./img/Tulips.jpeg"></option>
+                    </select>
+                    <br>
+                    <p style="font-weight: bold;">Season</p>
+                    <input type="text" id="seasonInput">
+                    <br><br>
+                    <button type="submit" id="submitt" style="background-color: cornflowerblue;">Save</button>
+                    <button type="submit" id="deletee" style="background-color: red;">Delete</button>
+                </fieldset>
+            </form>
+            <div id="showResult"></div>
+            
+        </div>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="text-align: center; background-color: blue;">
+        <label>All right reserved <script>
+            let year = new Date();
+            let actuallyYear = year.getFullYear();
+            document.write(actuallyYear);
+        </script>
+            &copy; ASAC
+        </label> 
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
